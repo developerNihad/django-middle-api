@@ -32,9 +32,12 @@ INSTALLED_APPS = [
     # "django.contrib.staticfiles",
     "rest_framework",
     "news",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # Should be at the top
+    'django.middleware.common.CommonMiddleware',  # After CorsMiddleware
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -43,6 +46,12 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://yourusername.github.io",  # GitHub Pages URL
+]
+
 
 ROOT_URLCONF = "newsapi.urls"
 
