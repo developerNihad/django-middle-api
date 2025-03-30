@@ -49,7 +49,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://yourusername.github.io",  # GitHub Pages URL
+    "https://bakueduaz.github.io",  # Your GitHub Pages
 ]
 
 
