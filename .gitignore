@@ -1,3 +1,53 @@
-venv
-__pycache__
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Environments
 .env
+.venv/
+venv/
+env/
+ENV/
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if you have frontend tools)
+node_modules/
+npm-debug.log*
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Vercel
+.vercel/
+
+# Database credentials (critical for NeonDB)
+*.env
+secrets.py
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Migration files (optional - some teams keep them)
+# !news/migrations/
+# !news/migrations/__init__.py
