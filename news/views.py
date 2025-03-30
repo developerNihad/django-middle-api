@@ -7,4 +7,4 @@ class NewsThreeList(APIView):
     def get(self, request):
         queryset = NewsThree.objects.all()
         serializer = NewsThreeSerializer(queryset, many=True)
-        return Response(serializer.data)
+        return Response({'news': serializer.data})
